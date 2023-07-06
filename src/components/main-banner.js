@@ -11,7 +11,7 @@ const Main_Banner = () => {
                 loop
                 muted
               >
-                <source src="/videos/main-video.mov" type="video/mp4" />
+                <source src="/videos/main-video.mp4" type="video/mp4" />
               </video>
     </div>
   )
