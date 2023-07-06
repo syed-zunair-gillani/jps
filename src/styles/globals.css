@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,12 +18,45 @@
   }
 }
 
+@font-face {
+  font-family: Helvetica_Regular;
+  src: url('../../public//fonts/Helvetica-Regular.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: Helvetica_Bold;
+  src: url('../../public//fonts/Helvetica-Bold.ttf');
+  font-weight: 900;
+}
+
+.Helvetica_Regular{
+  font-family: Helvetica_Regular, sans-serif ;
+}
+
+.Helvetica_Bold{
+  font-family: Helvetica_Bold, sans-serif ;
+  font-weight: 900;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  position: relative;
+  background-color: black;
+}
+#cat_box .slick-next{
+  right: 10px;
+  z-index: 10;
+}
+#cat_box .slick-prev {
+  left: 10px;
+  z-index: 10;
+}
+#cat_box .slick-arrow {
+  background-color: black;
+  border-radius: 100%;
+}
+#cat_box .slick-dots li.slick-active button:before{
+  color: #ffffff;
+}
+#cat_box .slick-dots li button:before{
+  color: #ffffff;
 }
